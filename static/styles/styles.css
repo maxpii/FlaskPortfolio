@@ -1,0 +1,39 @@
+body {
+    background-color: #30303B;
+}
+
+.header {
+    text-align: center;
+    font-family:monospace;
+    font-size: 75px;
+    margin:0px;
+    padding:0px;
+    animation: fadeIn 10s
+    /*background-color: rgb(29, 29, 214);*/
+}
+.message {
+    text-align: center;
+    font-family: monospace;
+    margin-top:0px;
+    font-size:55px;
+    animation: fadeIn 20s;
+    /*background-color:rgb(29, 29, 214)*/
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.container {
+    white-space: nowrap;
+}
+   
+.container * {
+    display: inline;
+    margin-left: 40px;
+    
+}
+img {
+    width:600px;
+    margin:20px;
+    border-radius:50px;
+}

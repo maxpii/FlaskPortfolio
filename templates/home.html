@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap" rel="stylesheet">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+    <title>Home</title>
+</head>
+<body>
+
+    <h1 class="header">Hello</h1>
+    <h2 class="message">Welcome to my small portfolio website</h2>
+
+    <div class="container">
+        <a target="_blank" href="http://127.0.0.1:5000/Calculator">
+            <img src="{{ url_for('static',filename='styles/calculator.png') }}" alt="something">
+        </a>
+
+        <a target="_blank" href="http://127.0.0.1:5000/Tic-Tac-Toe">
+            <img src="{{ url_for('static',filename='styles/tic-tac-toe.png') }}" alt="something">
+        </a>
+        <br>
+        
+        <a target="_blank" href="http://127.0.0.1:5000/Color-Changer">
+            <img src="{{ url_for('static',filename='styles/color-changer.png') }}" alt="something">
+        </a>
+        <a target="_blank" href="http://127.0.0.1:5000/Clicker">
+            <img src="{{ url_for('static',filename='styles/clicker.png') }}" alt="something">
+        </a>
+    </div>
+</body>
+</html>

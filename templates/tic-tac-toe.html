@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/tic-tac-toe_styles.css') }}">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <h1 id="heading">Tic-Tac-Toe</h1>
+    
+    <table id="board">
+        <tr>
+            <td id="left-top">
+                <button id="1"></button>
+            </td>
+            <td id="mid-top">
+                <button id="2"></button>
+            </td>
+            <td id="right-top">
+                <button id="3"></button>
+            </td>
+        </tr>
+
+        <tr>
+            <td id="left-mid">
+                <button id="4"></button>
+            </td>
+
+            <td id="mid-mid">  
+                <button id="5"></button>
+            </td>
+
+            <td id="right-mid">
+                <button id="6"></button>
+            </td>
+        </tr>
+    
+        <tr id="bottom-row">
+            <td id="left-bottom">
+                <button id="7"></button>
+            </td>
+            <td id="mid-bottom">
+                <button id="8"></button>
+            </td>
+                <td id="right-bottom">
+                <button id="9"></button>
+            </td>
+        </tr>
+    </table>
+    
+    <h1 id="turn">
+        
+        <span id="turn-text"></span>
+        
+        <h1>
+
+        <script src="{{url_for('static', filename='scripts/tic-tac-toe_script.js')}}"></script>
+</body>
+</html>
